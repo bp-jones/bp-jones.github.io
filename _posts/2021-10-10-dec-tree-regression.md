@@ -2,7 +2,7 @@
 
 As part of working towards an understanding of machine learning algorithms, decision trees are an ideal conceptual starting point. Starting with the data (root), they utilise a tree-like model of conditional statements (nodes) and decisions (branches) to produce outputs (leaves), forming the basis of a predictive model. This tree structure can be multi-layered and complex in order to deal with many possible outcomes given the data and required outcome. A simplified schematic is shown below:
 
-![Decision tree schematic](/2021-10-10_dec_tree_reg_imgs/dec_tree_schem.png)
+![Decision tree schematic](https://github.com/bp-jones/bp-jones.github.io/blob/main/_posts/2021-10-10_dec_tree_reg_imgs/dec_tree_schem.png)
 
 Decision trees can be used with both discrete data for classification, and continuous data for regression. Focusing on regression and using [scikit-learn](https://scikit-learn.org/stable/index.html), we can see how a simple decision tree regression works in practice. Starting with the example [here](https://scikit-learn.org/stable/auto_examples/tree/plot_tree_regression.html#sphx-glr-auto-examples-tree-plot-tree-regression-py), the purpose of the decision tree is to fit the output to the sine curve with the challenge of dealing with the additional noise added to it. From an astrophysics perspective, this noisy sine curve has parallels to a [lightcurve](https://en.wikipedia.org/wiki/Light_curve) from the observation of a star, with the peaks and dips representing the variable brightness, or the [transit](https://en.wikipedia.org/wiki/Methods_of_detecting_exoplanets#Transit_photometry) of an exoplanet across the host star.
 
