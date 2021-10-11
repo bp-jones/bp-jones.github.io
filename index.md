@@ -1,6 +1,6 @@
 Hello, and welcome to my blog!
 
-I am a final year undergraduate student at the University of Birmingham, enrolled on an MSci Physics & Astrophysics degree.
+My name is Ben and I am a final year undergraduate student at the University of Birmingham, enrolled on an MSci Physics & Astrophysics degree.
 
 The purpose of this blog is share progress on my final year undergraduate project, which has the working title: Bayesian Hierarchical Modelling and Machine Learning of Stellar Populations.
 
