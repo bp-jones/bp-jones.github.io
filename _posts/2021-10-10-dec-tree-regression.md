@@ -14,22 +14,22 @@ To graphically illustrate how this works, using the code example from scikit-lea
 
 The key parameter for adjusting how well the regression attempts to fit a model to the data is **max_depth**, shown in the legend for plots with regression applied. Starting with the data only, the sine curve and noise are obvious:
 
-![The sine curve with no regression applied.](2021-10-10_dec_tree_reg_imgs/data_only.png)
+![The sine curve with no regression applied.](/img/2021-10-10_dec_tree_reg_imgs/data_only.png)
 
 The first attempt at fitting the model deliberately sets max_depth low enough such that the peak of the sine curve is poorly approximated.
 
-![Regression applied - underfitting](2021-10-10_dec_tree_reg_imgs/data_fit_under_2-9.png)
+![Regression applied - underfitting](/img/2021-10-10_dec_tree_reg_imgs/data_fit_under_2-9.png)
 
 A minor 0.1 change in the max_depth parameter makes a notable change to the fit, particularly at the peak. This model fit remains true from values of 3 to 3.9.
 
-![Regression applied - closer match](2021-10-10_dec_tree_reg_imgs/data_fit_match_3-9.png)
+![Regression applied - closer match](/img/2021-10-10_dec_tree_reg_imgs/data_fit_match_3-9.png)
 
 With an increase to 4, there is a marked change with the decision tree regression overfitting and including specific points of noise.
 
-![Regression applied - overfitting](2021-10-10_dec_tree_reg_imgs/data_fit_over.png)
+![Regression applied - overfitting](/img/2021-10-10_dec_tree_reg_imgs/data_fit_over.png)
 
 To see how the decision tree model works, we can plot it schematically using [plot_tree](https://scikit-learn.org/stable/modules/generated/sklearn.tree.plot_tree.html#sklearn.tree.plot_tree).
 
-![Decision tree model max_depth = 3.9](2021-10-10_dec_tree_reg_imgs/data_tree_3-9.png)
+![Decision tree model max_depth = 3.9](/img/2021-10-10_dec_tree_reg_imgs/data_tree_3-9.png)
 
 The conditional statements are shown in each node with **mse** referring to [mean squared error](https://en.wikipedia.org/wiki/Mean_squared_error), used as value to determine how good the split at the node is, and is the average of the data points of the data provided. The samples are the number of data points in the input data, and at each node the samples are split between each successive node flowing from top to bottom. This process continues at each node depending on the max_depth value set, giving the final model.
