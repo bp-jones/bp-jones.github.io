@@ -30,6 +30,6 @@ With an increase to 4, there is a marked change with the decision tree regressio
 
 To see how the decision tree model works, we can plot it schematically using [plot_tree](https://scikit-learn.org/stable/modules/generated/sklearn.tree.plot_tree.html#sklearn.tree.plot_tree).
 
-![Decision tree model max_depth = 3](/img/2021-10-10_dec_tree_reg_imgs/data_tree_3.9.png)
+![Decision tree model max_depth = 3](/img/2021-10-10_dec_tree_reg_imgs/data_tree_3.png)
 
 The conditional statements are shown in each node with **mse** referring to [mean squared error](https://en.wikipedia.org/wiki/Mean_squared_error), used as value to determine how good the split at the node is, and is the average of the data points of the data provided. The samples are the number of data points in the input data, and at each node the samples are split between each successive node flowing from top to bottom. This process continues at each node depending on the max_depth value set, giving the final model.
