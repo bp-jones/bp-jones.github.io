@@ -2,8 +2,6 @@
 
 As part of working towards an understanding of machine learning algorithms, decision trees are an ideal conceptual starting point. Starting with the data (root), they utilise a tree-like model of conditional statements (nodes) and decisions (branches) to produce outputs (leaves), forming the basis of a predictive model. This tree structure can be multi-layered and complex in order to deal with many possible outcomes given the data and required outcome. A simplified schematic is shown below:
 
-![Decision tree schematic](/img/2021-10-10_dec_tree_reg_imgs/dec_tree_schem.png)
-
 <p align="center">
   <img src="/img/2021-10-10_dec_tree_reg_imgs/dec_tree_schem.png"/>
 </p>
@@ -18,22 +16,32 @@ To graphically illustrate how this works, using the code example from scikit-lea
 
 The key parameter for adjusting how well the regression attempts to fit a model to the data is **max_depth**, shown in the legend for plots with regression applied. This is the number of levels for the decision tree regression to use. Starting with the data only, the sine curve and noise are obvious:
 
-![The sine curve with no regression applied.](/img/2021-10-10_dec_tree_reg_imgs/data_only.png)
+<p align="center">
+  <img src="/img/2021-10-10_dec_tree_reg_imgs/data_only.png"/>
+</p>
 
 The first attempt at fitting the model deliberately sets max_depth low enough such that the peak of the sine curve is poorly approximated.
 
-![Regression applied - underfitting](/img/2021-10-10_dec_tree_reg_imgs/data_fit_match_2.png)
+<p align="center">
+  <img src="/img/2021-10-10_dec_tree_reg_imgs/data_fit_match_2.png"/>
+</p>
 
 A small change in the max_depth parameter from 2 to 3 makes a notable change to the fit, particularly at the peak.
 
-![Regression applied - closer match](/img/2021-10-10_dec_tree_reg_imgs/data_fit_match_3.png)
+<p align="center">
+  <img src="/img/2021-10-10_dec_tree_reg_imgs/data_fit_match_3.png"/>
+</p>
 
 With an increase to 4, there is a marked change with the decision tree regression overfitting and including specific points of noise.
 
-![Regression applied - overfitting](/img/2021-10-10_dec_tree_reg_imgs/data_fit_match_4.png)
+<p align="center">
+  <img src="/img/2021-10-10_dec_tree_reg_imgs/data_fit_match_4.png"/>
+</p>
 
 To see how the decision tree model works, we can plot it schematically using [plot_tree](https://scikit-learn.org/stable/modules/generated/sklearn.tree.plot_tree.html#sklearn.tree.plot_tree).
 
-![Decision tree model max_depth = 3](/img/2021-10-10_dec_tree_reg_imgs/data_tree_3.png)
+<p align="center">
+  <img src="/img/2021-10-10_dec_tree_reg_imgs/data_tree_3.png/>
+</p>
 
 The conditional statements are shown in each node with **mse** referring to [mean squared error](https://en.wikipedia.org/wiki/Mean_squared_error), used as value to determine how good the split at the node is, and is the average of the data points of the data provided. The samples are the number of data points in the input data, and at each node the samples are split between each successive node flowing from top to bottom. This process continues at each node depending on the max_depth value set, giving the final model.
