@@ -2,11 +2,15 @@
 
 As a follow on from my previous [post](https://bp-jones.github.io/2021/10/10/dec-tree-regression.html) on machine learning using a basic decision tree method, a natural progression is to look at neural networks and the concept of deep learning. Where classical machine learning approaches often use defined processes which can be understood, neural networks use a [black box](https://en.wikipedia.org/wiki/Black_box) approach. This black box is a network of neurons, analogous to neurons in a brain that take in information, then 'fire' and send this information along, with the probability of each neuron firing depending on the importance (or weight) assigned to it. This information is then sent along to successive layers of neurons where the process repeats until there is an outcome defined by the structure of the network. A simple schematic is shown below, where the neurons are represented by circles and are referred to as nodes.
 
-![Neural Network Schematic](/img/2021-10-19_nn-dl_basics_imgs/nn_diag.png)
+<p align="center">
+  <img src="/img/2021-10-19_nn-dl_basics_imgs/nn_diag.png"/>
+</p>
 
 Here, the arrow indicates the direction of data entering the network, where **x_1** and **x_2** are the data input nodes with the final output node of data at **y**. The **h** nodes make up the 'black box' element of the neural network, where the light grey section represents successive layers of neurons (in vertical slices) that take in data and feed it forward along the network. These **h** node layers are often referred to as hidden layers, and complex neural networks can have many repeated hidden layers with complex and evolving pathways as data passes through them, as nodes fire and pass on information based on the weight (or importance) of data fed into it. Not all nodes in a single layer may fire, changing how data is fed into successive layers. Using the same schematic diagram, an example of a pathway through the network is shown below:
 
-![Neural Network Schematic Pathway](/img/2021-10-19_nn-dl_basics_imgs/nn_diag_path.png)
+<p align="center">
+  <img src="/img/2021-10-19_nn-dl_basics_imgs/nn_diag_path.png"/>
+</p>
 
 We can see how only one node on the **h** layer fires, reducing the information reaching the **h_n** layer, of which only one node fires again. This data is only fed forward by one of the **h_n+1** nodes into the output node **y**. While this is simplified to aid visual clarity, it shows how a pathway can change, depending on what nodes 'activate' and feed the data forward. Highly complex networks form the basis of *deep learning*, and often network pathways cannot be determined from the output, only the accuracy of the results obtained from the process. This can make understanding what the neural network is doing problematic, hence the black box approach, compared to classic machine learning techniques. As with machine learning techniques, data can be fed iteratively through to improve the accuracy of the final result. With a neural net, pathways can get reinforced or adjusted based on this iterative process.
 
