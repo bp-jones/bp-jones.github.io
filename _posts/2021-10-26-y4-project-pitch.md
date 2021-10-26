@@ -11,7 +11,7 @@ The general outline of this project pitch is to contribute to an already existin
 [Bayesian inference](https://en.wikipedia.org/wiki/Bayesian_inference) is a statistical inference method, that utilises [Bayes theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem) in order to update the probability of a result based on new information, starting from current information. Bayes' theorem is shown below: 
 
 <p align="center">
-  <img src="/img/2021-10-26_y4_project_pitch_imgs/bayes_theorem.png"/>
+  <img src="/img/2021-10-26_y4_project_pitch_imgs/bayes_theorem_eqn.png"/>
 </p>
 
 The components of this expression are as follows:
@@ -34,4 +34,4 @@ Two alternative methods to the KDE have been suggested by the project supervisor
 
 ## Science Goals
 
-The final aim of the project is to use the (ideally) improved PBjam prior code as part of a larger science goal. This idea is the least developed, though would involve characterising a population of stars, leveraging the ease of use benefits PBjam provides. Physically, this could be a population constrained in an [open cluster](https://en.wikipedia.org/wiki/Open_cluster), where we could define physical properties and evolutionary stages of these. Alternatively, we could seek to improve the quantity of data the prior could draw from, by using publicly available data from missions such as the Transiting Exoplanet Survey Satellite ([TESS](https://en.wikipedia.org/wiki/Transiting_Exoplanet_Survey_Satellite))
+The final aim of the project is to use the (ideally) improved PBjam prior code as part of a larger science goal. This idea is the least developed, though would involve characterising a population of stars, leveraging the ease of use benefits PBjam provides. Physically, this could be a population constrained in an [open cluster](https://en.wikipedia.org/wiki/Open_cluster), where we could define physical properties and evolutionary stages of these. Alternatively, we could seek to improve the quantity of data the prior could draw from, by using publicly available data from missions such as the Transiting Exoplanet Survey Satellite ([TESS](https://en.wikipedia.org/wiki/Transiting_Exoplanet_Survey_Satellite)). This aspect of the project will be developed more as we continue on on with the work.
