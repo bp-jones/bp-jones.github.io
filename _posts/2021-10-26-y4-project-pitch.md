@@ -11,14 +11,17 @@ The general outline of this project pitch is to contribute to an already existin
 [Bayesian inference](https://en.wikipedia.org/wiki/Bayesian_inference) is a statistical inference method, that utilises [Bayes theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem) in order to update the probability of a result based on new information, starting from current information. Bayes' theorem is shown below: 
 
 <p align="center">
-  <img src="/2021-10-26_y4_project_pitch_imgs/bayes_theorem.png"/>
+  <img src="/img/2021-10-26_y4_project_pitch_imgs/bayes_theorem.png"/>
 </p>
 
 The components of this expression are as follows:
 
 * **P(D|M)** is the *likelihood*, which is the probability of obtaining the data **D** given the model **M**.
+
 * **P(M)** is the *prior*, which is the probability assigned to the model before we take data.
+
 * **P(M|D)** Is the *posterior*, which is the probability of the model **M** being correct given the data **D**.
+
 * **P(D)** is a normalisation constant for the probability distribution.
 
 Our focus will be the *prior*, and developing an alternative to the currently used method.  
