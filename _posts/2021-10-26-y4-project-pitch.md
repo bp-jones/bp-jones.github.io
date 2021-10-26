@@ -16,11 +16,11 @@ The general outline of this project pitch is to contribute to an already existin
 
 The components of this expression are as follows:
 
-* **P(D|M)** is the *likelihood*, which is the probability of obtaining the data **D** given the model **M**.
+* **P(D\|M)** is the *likelihood*, which is the probability of obtaining the data **D** given the model **M**.
 
 * **P(M)** is the *prior*, which is the probability assigned to the model before we take data.
 
-* **P(M|D)** Is the *posterior*, which is the probability of the model **M** being correct given the data **D**.
+* **P(M\|D)** Is the *posterior*, which is the probability of the model **M** being correct given the data **D**.
 
 * **P(D)** is a normalisation constant for the probability distribution.
 
