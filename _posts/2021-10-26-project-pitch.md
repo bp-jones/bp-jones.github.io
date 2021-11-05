@@ -1,4 +1,4 @@
-# Y4 Project Pitch
+# Project Pitch
 
 Having explored a little of [machine](https://bp-jones.github.io/2021/10/10/dec-tree-regression.html) and [deep](https://bp-jones.github.io/2021/10/19/nn-dl-basics.html) learning, the next step is to refine the project idea with a simple pitch to provide a context for applying machine and deep learning, and working towards a scientific goal. From supervisor suggestions and discussions with my project partner, one favoured idea is presented here, with the caveat that some elements can (and probably will) change should this be the project road we head down.
 
